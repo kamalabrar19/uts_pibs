@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, aside, footer {
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+aside {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

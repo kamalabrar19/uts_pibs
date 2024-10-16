@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Kamal Abrar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, section, aside, footer {
+            padding: 1em;
+            border: 1px solid #ddd;
+            margin: 5px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+        }
+
+        aside {
+            font-style: italic;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/100" alt="Profile Muka">
+        <h1>Kamal Abrar</h1>
+    </header>
+    
+    <nav>
+        <a onclick="navigateTo('biodata')">Biodata</a>
+        <a onclick="navigateTo('pendidikan')">Pendidikan</a>
+        <a onclick="navigateTo('pengalaman')">Pengalaman</a>
+        <a onclick="navigateTo('keahlian')">Keahlian</a>
+        <a onclick="navigateTo('publikasi')">Publikasi</a>
+    </nav>
+    
+    <section id="content">
+        <!-- Content ini akan berubah sesuai navigasi -->
+        <h1>Biodata</h1>
+        <p>Nama: Kamal Abrar</p>
+        <p>NIM: 123456789</p>
+        <p>Agama: Islam</p>
+        <p>Tanggal Lahir: 1 Januari 1999</p>
+        <p>Tempat Lahir: Jakarta</p>
+    </section>
+    
+    <aside>
+        <h3>Hobi</h3>
+        <ul>
+            <li>Stand Up Comedy</li>
+            <li>Pemrograman</li>
+            <li>Movie Enthusiast</li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <div>
+            <p>Twitter: @kamalabrar</p>
+            <p>Instagram: @kamal_insta</p>
+            <p>YouTube: Kamal Vlogs</p>
+        </div>
+        <div>
+            <p>&copy; Copyright Kamal Abrar</p>
+        </div>
+        <div>
+            <p>Happy Life Happy Code</p>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(section) {
+            const content = document.getElementById('content');
+            switch(section) {
+                case 'biodata':
+                    content.innerHTML = `
+                        <h1>Biodata</h1>
+                        <p>Nama: Kamal Abrar</p>
+                        <p>NIM: 123456789</p>
+                        <p>Agama: Islam</p>
+                        <p>Tanggal Lahir: 1 Januari 1999</p>
+                        <p>Tempat Lahir: Jakarta</p>
+                    `;
+                    break;
+                case 'pendidikan':
+                    content.innerHTML = `
+                        <h1>Pendidikan</h1>
+                        <p>S1 Teknik Informatika - Universitas XYZ</p>
+                    `;
+                    break;
+                case 'pengalaman':
+                    content.innerHTML = `
+                        <h1>Pengalaman</h1>
+                        <p>Magang di PT. ABC sebagai Web Developer</p>
+                        <p>Freelance Programmer selama 3 tahun</p>
+                    `;
+                    break;
+                case 'keahlian':
+                    content.innerHTML = `
+                        <h1>Keahlian</h1>
+                        <p>HTML, CSS, JavaScript</p>
+                        <p>PHP, Laravel</p>
+                        <p>React.js, Node.js</p>
+                    `;
+                    break;
+                case 'publikasi':
+                    content.innerHTML = `
+                        <h1>Publikasi</h1>
+                        <p>Artikel tentang Teknologi AI pada Majalah Komputasi</p>
+                        <p>Blog: "Programming with Passion"</p>
+                    `;
+                    break;
+                default:
+                    content.innerHTML = `<h1>Biodata</h1>`;
+            }
+        }
+    </script>
+</body>
+</html>
