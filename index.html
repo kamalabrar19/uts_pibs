@@ -1,102 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Kamal Abrar Ramadhan</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="kamalabrar.png" alt="Profile Picture" id="profile-picture">
-      <h1 id="name">Kamal Abrar Ramadhan</h1>
-    </div>
-  </header>
-
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="#" onclick="showContent('biodata')"><i class="fas fa-user"></i> Biodata</a></li>
-        <li><a href="#" onclick="showContent('pendidikan')"><i class="fas fa-graduation-cap"></i> Pendidikan</a></li>
-        <li><a href="#" onclick="showContent('pengalaman')"><i class="fas fa-briefcase"></i> Pengalaman</a></li>
-        <li><a href="#" onclick="showContent('keahlian')"><i class="fas fa-cogs"></i> Keahlian</a></li>
-      </ul>
-    </nav>
-
-    <main id="main-content">
-      <section class="content">
-        <div id="biodata" class="content-div">
-          <h2>Biodata</h2>
-          <div class="info-card">
-            <p><strong>NIM:</strong> 2023081028</p>
-            <p><strong>Nama:</strong> Kamal Abrar Ramadhan</p>
-            <p><strong>Agama:</strong> Atheist</p>
-            <p><strong>Tanggal Lahir:</strong> 19 Oktober 2005</p>
-            <p><strong>Tempat Lahir:</strong> Jakarta</p>
-          </div>
+    <header>
+        <div class="header-content">
+            <img src="images/reigan.jpeg" alt="Profil Mahasiswa" class="profile-pic">
+            <h1>Profile Kamal Abrar</h1>
         </div>
+    </header>
 
-        <div id="pendidikan" class="content-div" style="display: none;">
-          <h2>Pendidikan</h2>
-          <div class="info-card">
-            <p>Saya lulus dari Universitas Teknologi dengan gelar Sarjana di bidang Teknik Informatika. Saya juga telah menyelesaikan beberapa kursus online mengenai pemrograman web dan pengembangan software.</p>
-          </div>
-        </div>
-
-        <div id="pengalaman" class="content-div" style="display: none;">
-          <h2>Pengalaman</h2>
-          <div class="info-card">
-            <p>Saya memiliki pengalaman bekerja selama 3 tahun sebagai developer di perusahaan teknologi besar. Selain itu, saya juga pernah bekerja freelance untuk berbagai proyek pengembangan website.</p>
-          </div>
-        </div>
-
-        <div id="keahlian" class="content-div" style="display: none;">
-          <h2>Keahlian</h2>
-          <div class="info-card">
+    <div class="container">
+        <nav>
             <ul>
-              <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript</li>
-              <li><i class="fab fa-php"></i> PHP, MySQL</li>
-              <li><i class="fab fa-laravel"></i> Framework Laravel, Vue.js</li>
-              <li><i class="fab fa-git-alt"></i> Version Control dengan Git</li>
+                <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+                <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+                <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+                <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
             </ul>
-          </div>
+        </nav>
+
+        <section>
+            <div id="biodata" class="content">
+                <h2>Biodata</h2>
+                <div class="bio">
+                    <p><strong>NIM:</strong> 2023081028</p>
+                    <p><strong>Nama:</strong> Kamal Abrar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                    <p><strong>Tanggal Lahir:</strong> 19 Oktober 2005</p>
+                    <p><strong>Tempat Lahir:</strong> Jakarta</p>
+                </div>
+            </div>
+
+            <div id="pendidikan" class="content" style="display: none;">
+                <h2>Pendidikan</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year"> TK </div>
+                        <div class="timeline-content">
+                            <h3> Sekolah Alam Bintaro</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year"> SD</div>
+                        <div class="timeline-content">
+                            <h3> Sekolah Alam Bintaro</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">SMP</div>
+                        <div class="timeline-content">
+                            <h3>SMP NEGERI 12 TANGSEL</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">SMA</div>
+                        <div class="timeline-content">
+                            <h3>SMK NEGERI 2 TANGSEL</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">Kuliah</div>
+                        <div class="timeline-content">
+                            <h3>Universitas Pembangunan Jaya</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="pengalaman" class="content" style="display: none;">
+                <h2>Pengalaman</h2>
+                <ul class="experience-list">
+                  <li>
+                      <i class="icon-calendar"></i>
+                      <strong>Januari 2023 - Sekarang</strong> - RPA Engineer di Kompas Gramedia (Manufakturing)
+                      <p>Bekerja sebagai RPA Engineer, bertanggung jawab dalam mengembangkan dan mengelola otomasi proses bisnis menggunakan teknologi Robotic Process Automation (RPA).</p>
+                  </li>
+                  <li>
+                      <i class="icon-calendar"></i>
+                      <strong>PRIMA 2024</strong> - Event Planner (Divisi Acara)
+                      <p>Bekerja sebagai Event Planner, berperan dalam merancang dan mengelola acara secara keseluruhan untuk memastikan keberhasilan pelaksanaan event PRIMA 2024.</p>
+                  </li>
+                  <li>
+                      <i class="icon-calendar"></i>
+                      <strong>September 2023</strong> - Floor Director di Acara Standup Tangsel
+                      <p>Memimpin koordinasi tim dan teknis panggung selama acara Standup Tangsel untuk memastikan jalannya acara dengan lancar.</p>
+                  </li>
+                  <li>
+                      <i class="icon-calendar"></i>
+                      <strong>Juni 2023</strong> - LO (Liaison Officer) di Acara Special Show David Nurbianto
+                      <p>Bertugas sebagai Liaison Officer, memastikan komunikasi dan kebutuhan talent terpenuhi selama berlangsungnya acara Special Show David Nurbianto.</p>
+                  </li>
+              </ul>              
+            </div>
+
+            <div id="keahlian" class="content" style="display: none;">
+              <h2>Keahlian</h2>
+              <div class="skill">
+                  <h3>English Language</h3>
+                  <div class="skill-bar">
+                      <div class="skill-level" style="width: 95%;"></div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <h3>React JS Developer</h3>
+                  <div class="skill-bar">
+                      <div class="skill-level" style="width: 67%;"></div>
+                  </div>
+              </div>
+          </div>                    
+            <div id="publikasi" class="content" style="display: none;">
+              <h2>Publikasi</h2>
+              <div class="card-container">
+                  <div class="card">
+                      <h3>Belum Ada Publikasi</h3>
+                      <p class="date">Tanggal Tidak Tersedia</p>
+                      <p>Belum terdapat publikasi terkait untuk saat ini.</p>
+                  </div>
+              </div>
+          </div>          
+            </section>
+
+            <aside>
+                <h3>Hobi</h3>
+                <ul>
+                  <li><i class="fas fa-desktop"></i> Coding</li>
+                  <li><i class="fas fa-microphone"></i> Standup Comedy</li>
+                  <li><i class="fas fa-music"></i> Musik</li>
+              </ul>              
+            </aside>
         </div>
-      </section>
-    </main>
 
-    <aside>
-      <h3>Hobi</h3>
-      <ul>
-        <li><i class="fas fa-fish"></i> Memancing</li>
-        <li><i class="fas fa-mountain"></i> Mendaki gunung</li>
-        <li><i class="fas fa-camera"></i> Fotografi</li>
-      </ul>
-    </aside>
-  </div>
+        <footer>
+            <p>
+                <a href="." target="_blank"><i class="fab fa-twitter"></i></a> |
+                <a href="https://www.facebook.com/dewapulu/" target="_blank"><i class="fab fa-facebook-f"></i></a> |
+                <a href="https://www.instagram.com/kamal.abrarr/" target="_blank"><i class="fab fa-instagram"></i></a> |
+                <a href="https://www.youtube.com/@kamalabrar8490" target="_blank"><i class="fab fa-youtube"></i></a>
+            </p>
+            <p>© Copyright 2024. All Rights Reserved by Kamal Abrar</p>
+        </footer>
+        
+        
+            <script>
+                function showContent(sectionId) {  // Sembunyikan semua konten
+                    const contents = document.querySelectorAll('.content');
+                    contents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    
+                    document.getElementById(sectionId).style.display = 'block'; // Tampilkan konten yang dipilih
+                }
+            </script>
 
-  <footer>
-    <p>&copy; 2024 Kamal Abrar Ramadhan. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function showContent(sectionId) {
-      const contentDivs = document.querySelectorAll('.content-div');
-      contentDivs.forEach(div => {
-        div.style.display = 'none';
-      });
-
-      const targetDiv = document.getElementById(sectionId);
-      if (targetDiv) {
-        targetDiv.style.display = 'block';
-      }
-    }
-
-    // Tampilkan 'Biodata' sebagai default saat halaman dimuat
-    document.addEventListener('DOMContentLoaded', () => {
-      showContent('biodata');
-    });
-  </script>
 </body>
 </html>
