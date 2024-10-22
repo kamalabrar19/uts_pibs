@@ -8,8 +8,8 @@ html, body {
   height: 100%;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #121212; /* Dark background */
-  color: #ffa726; /* Orange text color for contrast */
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text for readability */
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 }
 
 header, footer {
-  background: linear-gradient(90deg, #333, #444); /* Dark gradient background */
-  color: #ffa726;
+  background: linear-gradient(90deg, #ff8a80, #ff5252); /* Cheerful red-pink gradient */
+  color: #fff;
   padding: 1em;
   text-align: center;
 }
@@ -32,7 +32,6 @@ header, footer {
 
 /* Styling header */
 header {
-  color: #ffa726;
   padding: 1em;
   text-align: left;
 }
@@ -48,12 +47,12 @@ header {
   border-radius: 50%;
   margin-right: 1em;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic:hover {
   transform: scale(1.1); 
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 header h1 {
@@ -64,12 +63,12 @@ header h1 {
 /* Styling nav */
 nav {
   width: 25%;
-  background-color: #1e1e1e; /* Dark background for nav */
+  background-color: #ffecb3; /* Light yellow background for nav */
   padding: 1.5em; 
   border-radius: 10px; 
   transition: background-color 0.3s ease;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1); 
-  border: 1px solid #424242; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ffd54f; 
 }
 
 nav ul {
@@ -84,19 +83,19 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #ffa726;
+  color: #ff5252; /* Bright red text */
   display: block;
   padding: 12px 15px; 
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 6px; 
   font-weight: 500;
-  background-color: #333; 
+  background-color: #fff176; /* Bright yellow background */
 }
 
 nav ul li a:hover {
-  background-color: #ffa726;
-  color: #000;
-  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2); 
+  background-color: #ff5252;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 82, 82, 0.2); 
 }
 
 /* Styling untuk timeline */
@@ -105,7 +104,7 @@ nav ul li a:hover {
   margin: 20px 0;
   padding: 20px 0;
   list-style-type: none;
-  border-left: 4px solid #ffa726; /* Orange vertical line */
+  border-left: 4px solid #4caf50; /* Green vertical line */
 }
 
 .timeline-item {
@@ -121,23 +120,23 @@ nav ul li a:hover {
   left: 0;
   width: 20px;
   height: 20px;
-  background-color: #ffa726;
+  background-color: #4caf50; /* Green circle */
   border-radius: 50%;
   z-index: 1;
 }
 
 .timeline-year {
   font-weight: bold;
-  color: #ffa726;
+  color: #4caf50; /* Green text */
   margin-bottom: 5px;
 }
 
 .timeline-content {
-  background-color: #1c1c1c;
+  background-color: #f0f8ff; /* Light blue */
   padding: 10px 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  color: #ffa726;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
 .timeline-content h3 {
@@ -147,18 +146,18 @@ nav ul li a:hover {
 
 /* Styling untuk container biodata */
 #biodata {
-  background-color: #1c1c1c; 
+  background-color: #ffffff; 
   padding: 20px;
   border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   width: 100%;
   max-width: 500px; 
   margin: 20px auto; 
-  color: #ffa726;
+  color: #333;
 }
 
 #biodata h2 {
-  color: #ffa726;
+  color: #ff5252;
   text-align: center; 
   margin-bottom: 20px;
   font-size: 1.8em; 
@@ -167,11 +166,11 @@ nav ul li a:hover {
 .bio p {
   font-size: 1.2em;
   margin: 10px 0;
-  color: #ffa726;
+  color: #333;
 }
 
 .bio p strong {
-  color: #ffa726; 
+  color: #ff5252; 
   font-weight: bold;
   margin-right: 5px;
 }
@@ -189,21 +188,21 @@ nav ul li a:hover {
   align-items: center; 
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #1c1c1c;
-  color: #ffa726;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+  background-color: #ffecb3;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   width: 100%; 
 }
 
 .experience-list li i {
-  color: #ffa726;
+  color: #ff5252;
   margin-bottom: 10px;
   font-size: 24px; 
 }
 
 .experience-list li strong {
   font-weight: bold;
-  color: #ffa726;
+  color: #ff5252;
   font-size: 1.2em;
   text-align: center;
 }
@@ -224,13 +223,13 @@ nav ul li a:hover {
 }
 
 .card {
-  background-color: #1c1c1c;
+  background-color: #ffccbc;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
   transition: transform 0.3s ease;
-  color: #ffa726;
+  color: #333;
 }
 
 .card:hover {
@@ -239,7 +238,7 @@ nav ul li a:hover {
 
 .card h3 {
   margin: 0 0 10px;
-  color: #ffa726;
+  color: #d32f2f; /* Bright red */
   font-size: 1.5em;
 }
 
@@ -255,7 +254,7 @@ nav ul li a:hover {
 }
 
 .card a {
-  color: #ffa726;
+  color: #d32f2f;
   text-decoration: none;
   font-weight: bold;
 }
@@ -271,12 +270,12 @@ nav ul li a:hover {
 
 .skill h3 {
   margin-bottom: 5px;
-  color: #ffa726;
+  color: #f57c00; /* Bright orange */
   font-size: 1.2em;
 }
 
 .skill-bar {
-  background-color: #333;
+  background-color: #e0e0e0;
   border-radius: 8px;
   height: 20px;
   width: 100%;
@@ -284,7 +283,7 @@ nav ul li a:hover {
 }
 
 .skill-level {
-  background-color: #ffa726;
+  background-color: #f57c00;
   height: 100%;
   border-radius: 8px;
   transition: width 0.5s ease;
@@ -295,11 +294,11 @@ nav ul li a:hover {
 section {
   width: 50%;
   padding: 1em;
-  background-color: #1c1c1c;
+  background-color: #ffeb3b; /* Bright yellow */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  color: #ffa726;
+  color: #333;
 }
 
 /* Efek hover untuk section */
@@ -310,17 +309,17 @@ section:hover {
 /* Styling untuk Aside Hobi */
 aside {
   width: 25%;
-  background-color: #1c1c1c;
+  background-color: #ffcc80; /* Light orange */
   padding: 1.5em;
   border-radius: 12px; 
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease, transform 0.3s ease; 
-  color: #ffa726;
+  color: #333;
 }
 
 /* Efek hover pada aside */
 aside:hover {
-  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
   transform: scale(1.05); 
 }
 
@@ -328,10 +327,10 @@ aside:hover {
 aside h3 {
   font-size: 1.8em;
   margin-bottom: 1em;
-  color: #ffa726; 
+  color: #ff5252; 
   text-align: center;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
 }
 
 /* Styling daftar hobi */
@@ -348,8 +347,8 @@ aside ul li {
   margin: 10px 0;
   font-size: 1.2em;
   text-align: center;
-  color: #ffa726;
-  background-color: #333;
+  color: #ffffff;
+  background-color: #64b5f6; /* Light blue */
   padding: 10px;
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -357,34 +356,35 @@ aside ul li {
 
 aside ul li i {
   font-size: 1.5em; 
-  color: #ffa726; 
+  color: #ffffff; 
 }
 
 aside ul li:hover {
-  background-color: #ffa726;
-  color: #000;
+  background-color: #f57c00; /* Bright orange */
+  color: #ffffff;
   transform: translateY(-3px);
 }
 
 aside ul li:hover i {
-  color: #000; 
+  color: #ffffff; 
 }
 
 footer {
   width: 100%;
   text-align: center;
   padding: 1em;
-  background-color: #263238;
-  color: #ffa726;
+  background-color: #4caf50; /* Green background */
+  color: #ffffff;
 }
 
+/* Responsive Styling */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
       width: 25%; 
       height: auto; 
       margin: 0;
       padding: 1em;
-      box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1); 
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
   }
 
   section {
